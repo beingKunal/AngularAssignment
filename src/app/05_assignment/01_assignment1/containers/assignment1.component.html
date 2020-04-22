@@ -8,6 +8,20 @@
     <li class="list-group-item">Display the result on the page via string interpolation</li>
   </ul>
   <div class="container your-code">
-    <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
+    <h6>
+      <br>
+      <form>
+        <div class="form-group">
+      <label for="inputBox"> Text </label>
+      <input  class="form-control" id ="inputBox" placeholder = "Enter Text Here" #box (input)="0">
+        </div>
+      <div class="form-group">
+      <label>Result </label>    
+      <p class="form-control">{{box.value}}</p>
+    </div>
+      </form>
+      
+
+    </h6>
   </div>
 </div>
